@@ -1,0 +1,2 @@
+include ':com.aware.plugin.cognitive_esm'
+//, ':com.aware.plugin.cognitive_esm.lib'

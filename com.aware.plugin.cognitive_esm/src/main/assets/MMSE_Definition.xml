@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///TestDefinition.xsd">
+    <name>Mini-Mental State Examination</name>
+    <short_name>MMSE</short_name>
+    <text2speech>true</text2speech>
+    <Component>
+        <name>Start</name>
+        <task>
+            <Question>Welcome</Question>
+            <score>0</score>
+            <Aware>
+                <ESM_Type>ESM_Notice</ESM_Type>
+                <Title>Welcome</Title>
+                <Instructions>Welcome to the Mini Mental State Examination. Thank you for taking your time. Press ok to begin.</Instructions>
+            </Aware>
+        </task>
+    </Component>
+    <Component>
+        <name>Orientation</name>
+        <task>
+            <Question>What is the (year) (season) (date) (day) (month)?</Question>
+            <score>5</score>
+            <Aware>
+                <ESM_Type>ESM_Number</ESM_Type>
+                <Title>Year</Title>
+                <Instructions>What is the current year?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Season</Title>
+                <Instructions>What is the current season?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Number</ESM_Type>
+                <Title>Date</Title>
+                <Instructions>What is the current date?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Day</Title>
+                <Instructions>What is the current day of the week?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Month</Title>
+                <Instructions>What is the current month?</Instructions>
+            </Aware>
+        </task>
+        <task>
+            <Question>Where are we: (state) (county) (town) (hospital) (floor)</Question>
+            <score>5</score>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>State</Title>
+                <Instructions>In which state are you?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>County</Title>
+                <Instructions>In which county are you?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Town</Title>
+                <Instructions>In which town are you?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Hospital</Title>
+                <Instructions>In which hospital are you?</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Floor</Title>
+                <Instructions>On which floor are you?</Instructions>
+            </Aware>
+        </task>
+    </Component>
+    <Component>
+        <name>Registration</name>
+        <task>
+            <Question>Name 3 Objects</Question>
+            <score>3</score>
+            <Aware>
+                <ESM_Type>ESM_Notice</ESM_Type>
+                <Title>Registration</Title>
+                <Instructions>The following test will show three objects. Please remember them well, you will be asked to recall them later.</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Notice</ESM_Type>
+                <Title>Registration</Title>
+                <Instructions>Table</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Notice</ESM_Type>
+                <Title>Registration</Title>
+                <Instructions>Chair</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Notice</ESM_Type>
+                <Title>Registration</Title>
+                <Instructions>House</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Recall</Title>
+                <Instructions>Please recall the first object</Instructions>
+                <Solution>Table</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Recall</Title>
+                <Instructions>Please recall the second object</Instructions>
+                <Solution>Chair</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Recall</Title>
+                <Instructions>Please recall the third object</Instructions>
+                <Solution>House</Solution>
+            </Aware>
+        </task>
+    </Component>
+    <Component>
+        <name>Attention and Calculation</name>
+        <score>5</score>
+        <task>
+            <Aware>
+                <ESM_Type>ESM_Number</ESM_Type>
+                <Title>Serial 7s</Title>
+                <Instructions>Subtract 7 from 100</Instructions>
+                <Solution>93</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Number</ESM_Type>
+                <Title>Serial 7s</Title>
+                <Instructions>Subtract 7 from your previous answer</Instructions>
+                <Solution>86</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Number</ESM_Type>
+                <Title>Serial 7s</Title>
+                <Instructions>Subtract 7 from your previous answer</Instructions>
+                <Solution>79</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Number</ESM_Type>
+                <Title>Serial 7s</Title>
+                <Instructions>Subtract 7 from your previous answer</Instructions>
+                <Solution>72</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Number</ESM_Type>
+                <Title>Serial 7s</Title>
+                <Instructions>Subtract 7 from your previous answer</Instructions>
+                <Solution>65</Solution>
+            </Aware>
+        </task>
+    </Component>
+    <Component>
+        <name>Recall</name>
+        <score>3</score>
+        <task>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Recall</Title>
+                <Instructions>Please recall the first item from the registration test</Instructions>
+                <Solution>Table</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Recall</Title>
+                <Instructions>Please recall the second item from the registration test</Instructions>
+                <Solution>Chair</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Recall</Title>
+                <Instructions>Please recall the third item from the registration test</Instructions>
+                <Solution>House</Solution>
+            </Aware>
+        </task>
+    </Component>
+    <Component>
+        <name>Language</name>
+        <score>9</score>
+        <task>
+            <Aware>
+                <ESM_Type>ESM_IMAGE_Freetext</ESM_Type>
+                <Title>Language</Title>
+                <ImageInstructions>
+                    <Text>Please name this object</Text>
+                    <ImageUrl>https://i.imgur.com/Z70CiJg.jpg</ImageUrl>
+                </ImageInstructions>
+                <Solution>Pencil</Solution>
+            </Aware>
+            <Aware>
+                <ESM_Type>ESM_IMAGE_Freetext</ESM_Type>
+                <Title>Language</Title>
+                <ImageInstructions>
+                    <Text>Please name this object</Text>
+                    <ImageUrl>http://esquireuk.cdnds.net/16/07/1455902737-watch-junghans-automatic-43.jpg</ImageUrl>
+                </ImageInstructions>
+                <Solution>Watch</Solution>
+            </Aware>
+        </task>
+    </Component>
+    <Component>
+        <name>Complete</name>
+        <score>0</score>
+        <task>
+            <Aware>
+                <ESM_Type>ESM_Notice</ESM_Type>
+                <Title>Completed</Title>
+                <Instructions>Thank you for completing the test. You will be able to receive your result from the examiner.</Instructions>
+            </Aware>
+        </task>
+    </Component>
+    <Schedule>
+        <id>"morning"</id>
+        <hour>13</hour>
+        <minute>22</minute>
+    </Schedule>
+</TestDefinition>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="TestDefinition">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="name" type="xsd:string"/>
+                <xsd:element name="short_name" type="xsd:string"/>
+                <xsd:element name="text2speech" type="xsd:boolean" minOccurs="0"/>
+                <xsd:element name="Component" type="xsd:element" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="score" type="xsd:integer" minOccurs="0"/>
+                            <xsd:element name="task" type="xsd:element" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Question" type="xsd:string"/>
+                                        <xsd:element name="score" type="xsd:integer"/>
+                                        <xsd:element name="Aware" type="xsd:element" maxOccurs="unbounded">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="ESM_Type" type="xsd:string"/>
+                                                    <xsd:element name="Title" type="xsd:string"/>
+                                                    <xsd:element name="Instructions" type="xsd:string" minOccurs="0"/>
+                                                    <xsd:element name="ImageInstructions" type="xsd:element" minOccurs="0">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element name="Text" type="xsd:string"/>
+                                                                <xsd:element name="ImageUrl" type="xsd:string" minOccurs="0"/>
+                                                                <xsd:element name="encodedImage" type="xsd:string" minOccurs="0"/>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Options" type="xsd:element" minOccurs="0">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element name="Option" type="xsd:string" maxOccurs="unbounded"/>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Solution" type="xsd:string" minOccurs="0"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Schedule" type="xsd:element" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="id" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+                            <xsd:element name="hour" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+                            <xsd:element name="minute" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+                            <xsd:element name="weekday" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+                            <xsd:element name="month" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
