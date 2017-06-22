@@ -21,7 +21,7 @@ import java.util.HashMap;
 
 public class Provider extends ContentProvider {
 
-    public static String AUTHORITY = "com.aware.plugin.cognitive_esm.provider.xxx"; //change to package.provider.your_plugin_name
+    public static String AUTHORITY = "com.aware.plugin.cognitive_esm.provider.cognitive_esm"; //change to package.provider.your_plugin_name
 
     public static final int DATABASE_VERSION = 1; //increase this if you make changes to the database structure, i.e., rename columns, etc.
     public static final String DATABASE_NAME = "plugin_template.db"; //the database filename, use plugin_xxx for plugins.

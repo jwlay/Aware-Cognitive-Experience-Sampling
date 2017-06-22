@@ -1,9 +1,14 @@
 package com.aware.plugin.cognitive_esm;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.StrictMode;
+import android.util.Log;
 
+import com.aware.Applications;
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
 import com.aware.ESM;
@@ -12,6 +17,8 @@ import com.aware.ui.esms.ESMFactory;
 import com.aware.utils.Aware_Plugin;
 
 import java.util.ArrayList;
+
+import static com.aware.ESM.EXTRA_ESM;
 
 public class Plugin extends Aware_Plugin {
 
@@ -56,23 +63,33 @@ public class Plugin extends Aware_Plugin {
             //Initialize our plugin's settings
             Aware.setSetting(this, Settings.STATUS_PLUGIN_TEMPLATE, true);
 
+            Aware.setSetting(this, Aware_Preferences.STATUS_ESM, true);
+
             TestExecuter executer = new TestExecuter();
 
             ESMFactory esmFactory = new ESMFactory();
 
-            /*CharSequence[] tests = Settings.getTests().getEntries();
-            CharSequence[] testsEnabled = Settings.getTests().getEntryValues();
-
-            for (int i = 0; i < tests.length; i++) {
-                if (testsEnabled[i] == "true") {
-                    executer.createTest(this, esmFactory, (String) tests[i]);
-                }
+            if (android.os.Build.VERSION.SDK_INT > 9) {
+                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(policy);
+            }
+            long startTime = System.currentTimeMillis();
+            /*while ((Settings.getTests() == null) && (System.currentTimeMillis()-startTime)<10000) {
+                Log.
             }*/
-            executer.createTest(this, esmFactory, "MMSE_Definition.xml");
+            if (Settings.getTests() != null)
+                for (String test : Settings.getTests()) {
+                    test.replaceAll(" ","");
+                    if (test.length() != 0) {
+                        Log.v(TAG, "Creating test: "+test);
+                        executer.createTest(this, esmFactory, test);
+                    }
+                }
+            else Log.i(TAG, "No tests found");
 
             //Initialise AWARE instance in plugin
             Aware.startAWARE(this);
-        }
+        } else Log.v(TAG, "Permission not ok!");
 
         return START_STICKY;
     }

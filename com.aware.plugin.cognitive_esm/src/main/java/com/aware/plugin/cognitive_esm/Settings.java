@@ -3,10 +3,12 @@ package com.aware.plugin.cognitive_esm;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
+import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import com.aware.Aware;
 
@@ -17,14 +19,17 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
 
     //Plugin settings in XML @xml/preferences
     public static final String STATUS_PLUGIN_TEMPLATE = "status_plugin_template";
-    public static final String COGNITIVE_TESTS = "cognitive_tests";
+    public static final String TEST_NAMES = "test_names";
 
     //Plugin settings UI elements
     private static CheckBoxPreference status;
-    private static ListPreference Ctests;
+    private static EditTextPreference testNames;
 
-    //Cognitive Tests
-    private static ArrayList<String> tests;
+    public static String[] getTests() {
+        if (testNames == null) return null;
+        return testNames.getText().split(",");
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,16 +37,6 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
         addPreferencesFromResource(R.xml.preferences);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.registerOnSharedPreferenceChangeListener(this);
-        tests = new ArrayList<>();
-        try {
-            for (String item : getApplicationContext().getAssets().list("")) {
-                tests.add(item);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Ctests = (ListPreference) findPreference(COGNITIVE_TESTS);
-        Ctests.setEntries(tests.toArray(new CharSequence[tests.size()]));
     }
 
     @Override
@@ -49,14 +44,10 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
         super.onResume();
 
         status = (CheckBoxPreference) findPreference(STATUS_PLUGIN_TEMPLATE);
-        Ctests = (ListPreference) findPreference(COGNITIVE_TESTS);
+        testNames = (EditTextPreference) findPreference(TEST_NAMES);
         if( Aware.getSetting(this, STATUS_PLUGIN_TEMPLATE).length() == 0 ) {
             Aware.setSetting( this, STATUS_PLUGIN_TEMPLATE, true ); //by default, the setting is true on install
         }
-        if (Aware.getSetting(this, COGNITIVE_TESTS).length() == 0) {
-            Aware.setSetting(this, COGNITIVE_TESTS, true);
-        }
-        Ctests.setEntries(tests.toArray(new CharSequence[tests.size()]));
         status.setChecked(Aware.getSetting(getApplicationContext(), STATUS_PLUGIN_TEMPLATE).equals("true"));
     }
 
@@ -67,14 +58,15 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
             Aware.setSetting(this, key, sharedPreferences.getBoolean(key, false));
             status.setChecked(sharedPreferences.getBoolean(key, false));
         }
+        if ( setting.getKey().equals(TEST_NAMES) ) {
+            Log.v("Hello","The key is "+sharedPreferences.getString(key, null));
+            Aware.setSetting(this, key, sharedPreferences.getString(key, null));
+            //testNames.setText(key);
+        }
         if (Aware.getSetting(this, STATUS_PLUGIN_TEMPLATE).equals("true")) {
             Aware.startPlugin(getApplicationContext(), "com.aware.plugin.cognitive_esm");
         } else {
             Aware.stopPlugin(getApplicationContext(), "com.aware.plugin.cognitive_esm");
         }
-    }
-
-    public static ListPreference getTests() {
-        return Ctests;
     }
 }

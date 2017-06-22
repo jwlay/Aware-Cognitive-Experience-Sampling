@@ -23,8 +23,11 @@ public class TestDefinition {
     @Element(name = "short_name")
     private String short_name;
 
+    @Element(name = "description", required = false)
+    private String description;
+
     @Element(name = "text2speech", required = false)
-    private boolean text2speech;
+    private Boolean text2speech;
 
     @ElementList(name = "Component", inline = true)
     private List<Component> components;
@@ -56,11 +59,19 @@ public class TestDefinition {
         this.short_name = short_name;
     }
 
-    public boolean isText2speech() {
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Boolean getText2speech() {
         return text2speech;
     }
 
-    public void setText2speech(boolean text2speech) {
+    public void setText2speech(Boolean text2speech) {
         this.text2speech = text2speech;
     }
 

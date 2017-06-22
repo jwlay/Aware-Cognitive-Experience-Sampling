@@ -32,35 +32,6 @@ public class ContextCard implements IContextCard {
         //Load card layout
         View card = LayoutInflater.from(context).inflate(R.layout.card, null);
 
-        //Initialize UI elements from the card
-        tests = (ListView) card.findViewById(R.id.tests);
-
-        //Set data on the UI
-        ArrayList<String> cognitiveTests = new ArrayList<>();
-        try {
-            for (String item : context.getAssets().list(""))
-                cognitiveTests.add(item);
-        } catch (IOException e) {
-            e.printStackTrace();
-            cognitiveTests.add("Failed to load tests");
-        }
-        if (cognitiveTests.size() == 0 )
-            cognitiveTests.add("No tests found");
-
-        tests.setAdapter(new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, cognitiveTests));
-        tests.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Schedule the test on click
-                ESMFactory esmFactory = new ESMFactory();
-                String test = (String) adapterView.getItemAtPosition(i);
-                TestExecuter executer = new TestExecuter();
-                executer.createTest(context, esmFactory,test);
-                ESM.queueESM(context, esmFactory.build());
-                Aware.startAWARE(context);
-            }
-        });
-
 
         //Return the card to AWARE/apps
         return card;

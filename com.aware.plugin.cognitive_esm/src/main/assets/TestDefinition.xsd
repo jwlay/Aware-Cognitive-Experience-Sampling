@@ -3,42 +3,189 @@
     <xsd:element name="TestDefinition">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="name" type="xsd:string"/>
-                <xsd:element name="short_name" type="xsd:string"/>
-                <xsd:element name="text2speech" type="xsd:boolean" minOccurs="0"/>
+                <xsd:element name="name" type="xsd:string">
+                    <xsd:annotation>
+                        <xsd:documentation>The name of the test</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="short_name" type="xsd:string">
+                    <xsd:annotation>
+                        <xsd:documentation>Test name abbreviation</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="description" type="xsd:string" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Description of the test (optional)</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="text2speech" type="xsd:boolean" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>Enable text-to-speech on the test (optional, default: false)</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
                 <xsd:element name="Component" type="xsd:element" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>XML element containing the component information (unbounded)</xsd:documentation>
+                    </xsd:annotation>
                     <xsd:complexType>
                         <xsd:sequence>
-                            <xsd:element name="name" type="xsd:string"/>
-                            <xsd:element name="score" type="xsd:integer" minOccurs="0"/>
+                            <xsd:element name="name" type="xsd:string">
+                                <xsd:annotation>
+                                    <xsd:documentation>Name of the component</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="score" type="xsd:integer" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Maximum possible score for the component (optional)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
                             <xsd:element name="task" type="xsd:element" maxOccurs="unbounded">
+                                <xsd:annotation>
+                                    <xsd:documentation>XML element containing information about a component task (unbounded)</xsd:documentation>
+                                </xsd:annotation>
                                 <xsd:complexType>
                                     <xsd:sequence>
-                                        <xsd:element name="Question" type="xsd:string"/>
-                                        <xsd:element name="score" type="xsd:integer"/>
+                                        <xsd:element name="Question" type="xsd:string" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Original question from the non-digitalised test for reference (optional)</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
+                                        <xsd:element name="score" type="xsd:integer" minOccurs="0">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Maximum possible score for the task (optional)</xsd:documentation>
+                                            </xsd:annotation>
+                                        </xsd:element>
                                         <xsd:element name="Aware" type="xsd:element" maxOccurs="unbounded">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Instructions for building the Aware component (unbounded)</xsd:documentation>
+                                            </xsd:annotation>
                                             <xsd:complexType>
                                                 <xsd:sequence>
-                                                    <xsd:element name="ESM_Type" type="xsd:string"/>
-                                                    <xsd:element name="Title" type="xsd:string"/>
-                                                    <xsd:element name="Instructions" type="xsd:string" minOccurs="0"/>
+                                                    <xsd:element name="ESM_Type" type="xsd:string">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Name of the ESM class in Aware</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:element>
+                                                    <xsd:element name="Command" type="xsd:string" minOccurs="0">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Name of the overriding class in the plugin in case the ESM_Type is "Command" (optional)</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:element>
+                                                    <xsd:element name="Title" type="xsd:string">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Title of the ESM dialog</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:element>
+                                                    <xsd:element name="Text2Speech" type="xsd:boolean" minOccurs="0">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Enable or disable text-to-speech for this task individually (optional)</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:element>
+                                                    <xsd:element name="Instructions" type="xsd:string" minOccurs="0">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Text instructions (optional)</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:element>
                                                     <xsd:element name="ImageInstructions" type="xsd:element" minOccurs="0">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Element for the image instructions in case the ESM_IMAGE_Freetext or ESM_IMAGE_DRAW class is chosen (optional)</xsd:documentation>
+                                                        </xsd:annotation>
                                                         <xsd:complexType>
                                                             <xsd:sequence>
-                                                                <xsd:element name="Text" type="xsd:string"/>
-                                                                <xsd:element name="ImageUrl" type="xsd:string" minOccurs="0"/>
-                                                                <xsd:element name="encodedImage" type="xsd:string" minOccurs="0"/>
+                                                                <xsd:element name="Text" type="xsd:string">
+                                                                    <xsd:annotation>
+                                                                        <xsd:documentation>Text instructions to appear over the image</xsd:documentation>
+                                                                    </xsd:annotation>
+                                                                </xsd:element>
+                                                                <xsd:element name="ImageUrl" type="xsd:string" minOccurs="0">
+                                                                    <xsd:annotation>
+                                                                        <xsd:documentation>url to the image (optional)</xsd:documentation>
+                                                                    </xsd:annotation>
+                                                                </xsd:element>
+                                                                <xsd:element name="encodedImage" type="xsd:string" minOccurs="0">
+                                                                    <xsd:annotation>
+                                                                        <xsd:documentation>base64 encoded image string (optional)</xsd:documentation>
+                                                                    </xsd:annotation>
+                                                                </xsd:element>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                    <xsd:element name="CommandInstructions" type="xsd:element" minOccurs="0">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Instructions for the shapes in case the ESM type is "Command" (optional)</xsd:documentation>
+                                                        </xsd:annotation>
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element name="Text" type="xsd:string">
+                                                                    <xsd:annotation>
+                                                                        <xsd:documentation>Text instructions to appear over the canvas</xsd:documentation>
+                                                                    </xsd:annotation>
+                                                                </xsd:element>
+                                                                <xsd:element name="Shapes" type="xsd:element">
+                                                                    <xsd:annotation>
+                                                                        <xsd:documentation>Container for the shapes</xsd:documentation>
+                                                                    </xsd:annotation>
+                                                                    <xsd:complexType>
+                                                                        <xsd:sequence>
+                                                                            <xsd:element name="Shape" type="xsd:element" maxOccurs="unbounded">
+                                                                                <xsd:annotation>
+                                                                                    <xsd:documentation>A shape element (unbounded)</xsd:documentation>
+                                                                                </xsd:annotation>
+                                                                                <xsd:complexType>
+                                                                                    <xsd:sequence>
+                                                                                        <xsd:element name="type" type="xsd:string">
+                                                                                            <xsd:annotation>
+                                                                                                <xsd:documentation>Type of the shape to be created</xsd:documentation>
+                                                                                            </xsd:annotation>
+                                                                                        </xsd:element>
+                                                                                        <xsd:element name="xPos" type="xsd:int">
+                                                                                            <xsd:annotation>
+                                                                                                <xsd:documentation>X-Position of the shape</xsd:documentation>
+                                                                                            </xsd:annotation>
+                                                                                        </xsd:element>
+                                                                                        <xsd:element name="yPos" type="xsd:int">
+                                                                                            <xsd:annotation>
+                                                                                                <xsd:documentation>Y-Position of the shape</xsd:documentation>
+                                                                                            </xsd:annotation>
+                                                                                        </xsd:element>
+                                                                                        <xsd:element name="radius" type="xsd:int">
+                                                                                            <xsd:annotation>
+                                                                                                <xsd:documentation>Radius of the shape</xsd:documentation>
+                                                                                            </xsd:annotation>
+                                                                                        </xsd:element>
+                                                                                        <xsd:element name="color" type="xsd:string">
+                                                                                            <xsd:annotation>
+                                                                                                <xsd:documentation>Fill color of the shape</xsd:documentation>
+                                                                                            </xsd:annotation>
+                                                                                        </xsd:element>
+                                                                                    </xsd:sequence>
+                                                                                </xsd:complexType>
+                                                                            </xsd:element>
+                                                                        </xsd:sequence>
+                                                                    </xsd:complexType>
+                                                                </xsd:element>
                                                             </xsd:sequence>
                                                         </xsd:complexType>
                                                     </xsd:element>
                                                     <xsd:element name="Options" type="xsd:element" minOccurs="0">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Container for answer options in case the ESM is of type radio, checkbox (optional)</xsd:documentation>
+                                                        </xsd:annotation>
                                                         <xsd:complexType>
                                                             <xsd:sequence>
-                                                                <xsd:element name="Option" type="xsd:string" maxOccurs="unbounded"/>
+                                                                <xsd:element name="Option" type="xsd:string" maxOccurs="unbounded">
+                                                                    <xsd:annotation>
+                                                                        <xsd:documentation>Answer option (unbounded)</xsd:documentation>
+                                                                    </xsd:annotation>
+                                                                </xsd:element>
                                                             </xsd:sequence>
                                                         </xsd:complexType>
                                                     </xsd:element>
-                                                    <xsd:element name="Solution" type="xsd:string" minOccurs="0"/>
+                                                    <xsd:element name="Solution" type="xsd:string" minOccurs="0">
+                                                        <xsd:annotation>
+                                                            <xsd:documentation>Correct solution to the ESM for reference purposes (optional)</xsd:documentation>
+                                                        </xsd:annotation>
+                                                    </xsd:element>
                                                 </xsd:sequence>
                                             </xsd:complexType>
                                         </xsd:element>
@@ -48,14 +195,42 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
-                <xsd:element name="Schedule" type="xsd:element" maxOccurs="unbounded">
+                <xsd:element name="Schedule" type="xsd:element" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>Schedule for the test to be executed (optional, unbounded)</xsd:documentation>
+                    </xsd:annotation>
                     <xsd:complexType>
                         <xsd:sequence>
-                            <xsd:element name="id" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                            <xsd:element name="hour" type="xsd:int" minOccurs="0" maxOccurs="1"/>
-                            <xsd:element name="minute" type="xsd:int" minOccurs="0" maxOccurs="1"/>
-                            <xsd:element name="weekday" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-                            <xsd:element name="month" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+                            <xsd:element name="id" type="xsd:string" minOccurs="1" maxOccurs="1">
+                                <xsd:annotation>
+                                    <xsd:documentation>Name of the schedule</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="component" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:annotation>
+                                    <xsd:documentation>Component(s) to be scheduled. (optional, unbounded, default: all)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="hour" type="xsd:int" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:annotation>
+                                    <xsd:documentation>hour(s) at which to activate the schedule (optional, unbounded)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="minute" type="xsd:int" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:annotation>
+                                    <xsd:documentation>minute(s) at which to activate the schedule (optional, unbounded)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="weekday" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:annotation>
+                                    <xsd:documentation>weekday(s) at which to activate the schedule (optional, unbounded)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
+                            <xsd:element name="month" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:annotation>
+                                    <xsd:documentation>month at which to activate the schedule (optional, unbounded)</xsd:documentation>
+                                </xsd:annotation>
+                            </xsd:element>
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>

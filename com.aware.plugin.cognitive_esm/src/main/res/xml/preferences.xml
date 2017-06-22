@@ -9,10 +9,10 @@
         android:persistent="true"
         android:summary="Activate/deactivate plugin" />
 
-    <ListPreference
-        android:key="cognitive_tests"
-        android:title="Cognitive Tests"
-        android:summary="Enable/disable cognitive Tests"
-        android:persistent="true"/>
+    <EditTextPreference
+        android:key="test_names"
+        android:persistent="true"
+        android:summary="Comma separated list of tests to run"
+        />
 
 </PreferenceScreen>

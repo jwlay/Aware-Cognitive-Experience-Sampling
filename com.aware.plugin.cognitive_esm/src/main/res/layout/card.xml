@@ -7,13 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Available Tests:"
+        android:text="Cognitive Experience Sampling"
         android:id="@+id/hello"
         android:textColor="#000"/>
-    <ListView
-        android:id="@+id/tests"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#000"></ListView>
 </LinearLayout>

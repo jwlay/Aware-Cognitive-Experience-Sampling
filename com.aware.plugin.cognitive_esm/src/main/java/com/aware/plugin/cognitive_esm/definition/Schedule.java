@@ -1,7 +1,11 @@
 package com.aware.plugin.cognitive_esm.definition;
 
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Jan Wohlfahrt-Laymann on 2017-05-22.
@@ -13,18 +17,20 @@ public class Schedule {
     @Element(name="id")
     private String id;
 
-    //initialize hour and minute to 999 because not a valid hour & number (allow checking for initialization)
-    @Element(name="hour", required = false)
-    private int hour = 999;
+    @ElementList(entry="component", required = false, inline = true)
+    private List<String> components = new ArrayList<String>();
 
-    @Element(name="minute", required = false)
-    private int minute = 999;
+    @ElementList(entry="hour", required = false, inline = true)
+    private List<Integer> hour = new ArrayList<Integer>();
 
-    @Element(name="weekday", required = false)
-    private String weekday;
+    @ElementList(entry="minute", required = false, inline = true)
+    private List<Integer> minute = new ArrayList<Integer>();
 
-    @Element(name="month", required = false)
-    private String month;
+    @ElementList(entry="weekday", required = false, inline = true)
+    private List<String> weekday = new ArrayList<String>();
+
+    @ElementList(entry="month", required = false, inline = true)
+    private List<String> month = new ArrayList<String>();
 
     public String getId() {
         return id;
@@ -34,35 +40,43 @@ public class Schedule {
         this.id = id;
     }
 
-    public int getHour() {
+    public List<String> getComponents() {
+        return components;
+    }
+
+    public void setComponents(List<String> components) {
+        this.components = components;
+    }
+
+    public List<Integer> getHour() {
         return hour;
     }
 
-    public void setHour(int hour) {
+    public void setHour(List<Integer> hour) {
         this.hour = hour;
     }
 
-    public int getMinute() {
+    public List<Integer> getMinute() {
         return minute;
     }
 
-    public void setMinute(int minute) {
+    public void setMinute(List<Integer> minute) {
         this.minute = minute;
     }
 
-    public String getWeekday() {
+    public List<String> getWeekday() {
         return weekday;
     }
 
-    public void setWeekday(String weekday) {
+    public void setWeekday(List<String> weekday) {
         this.weekday = weekday;
     }
 
-    public String getMonth() {
+    public List<String> getMonth() {
         return month;
     }
 
-    public void setMonth(String month) {
+    public void setMonth(List<String> month) {
         this.month = month;
     }
 }

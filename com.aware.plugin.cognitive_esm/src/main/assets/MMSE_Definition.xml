@@ -2,6 +2,7 @@
 <TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///TestDefinition.xsd">
     <name>Mini-Mental State Examination</name>
     <short_name>MMSE</short_name>
+    <description>This test digitalizes the Mini-Mental State Examination as described by Folstein et al. (1975). The test can be used with the "Awareframework" and the "Cognitive Experience Sampling Method" plugin for Android.</description>
     <text2speech>true</text2speech>
     <Component>
         <name>Start</name>
@@ -11,7 +12,7 @@
             <Aware>
                 <ESM_Type>ESM_Notice</ESM_Type>
                 <Title>Welcome</Title>
-                <Instructions>Welcome to the Mini Mental State Examination. Thank you for taking your time. Press ok to begin.</Instructions>
+                <Instructions> Welcome to the Mini Mental State Examination. Thank you for taking your time. The test will ask a variety of questions that will help to examine your cognitive ability. Press ok to begin.</Instructions>
             </Aware>
         </task>
     </Component>
@@ -84,7 +85,8 @@
             <Aware>
                 <ESM_Type>ESM_Notice</ESM_Type>
                 <Title>Registration</Title>
-                <Instructions>The following test will show three objects. Please remember them well, you will be asked to recall them later.</Instructions>
+                <Instructions>In the following dialog boxes three random items will appear. Please remember them well, you will be asked to recall them later.
+                </Instructions>
             </Aware>
             <Aware>
                 <ESM_Type>ESM_Notice</ESM_Type>
@@ -185,6 +187,8 @@
         <name>Language</name>
         <score>9</score>
         <task>
+            <Question>Name a pencil, and a watch</Question>
+            <score>2</score>
             <Aware>
                 <ESM_Type>ESM_IMAGE_Freetext</ESM_Type>
                 <Title>Language</Title>
@@ -198,10 +202,64 @@
                 <ESM_Type>ESM_IMAGE_Freetext</ESM_Type>
                 <Title>Language</Title>
                 <ImageInstructions>
-                    <Text>Please name this object</Text>
+                    <Text>Please name this object.</Text>
                     <ImageUrl>http://esquireuk.cdnds.net/16/07/1455902737-watch-junghans-automatic-43.jpg</ImageUrl>
                 </ImageInstructions>
                 <Solution>Watch</Solution>
+            </Aware>
+        </task>
+        <task>
+            <score>1</score>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Repetition</Title>
+                <Text2Speech>true</Text2Speech>
+                <Instructions>Repeat the following sentence: "No ifs, ands, or buts."</Instructions>
+            </Aware>
+        </task>
+        <task>
+            <Aware>
+                <ESM_Type>ESM_Notice</ESM_Type>
+                <Title>Language</Title>
+                <Instructions>In the next frame three circles will appear on the screen. Please complete the following command: Align the circles in a vertical line on the screen. Make sure the circles do not intersect. Place the red circle on top, place the blue circle in the middle, and place the green circle on the bottom.</Instructions>
+            </Aware>
+            <Aware>
+                <ESM_Type>Command</ESM_Type>
+                <Command>ThreeStageCommand</Command>
+                <Title>Three Stage Command</Title>
+                <CommandInstructions>
+                    <Text>Follow the previously mentioned command.</Text>
+                    <Shapes>
+                        <Shape>
+                            <type>Circle</type>
+                            <xPos>50</xPos>
+                            <yPos>50</yPos>
+                            <radius>100</radius>
+                            <color>red</color>
+                        </Shape>
+                        <Shape>
+                            <type>Circle</type>
+                            <xPos>100</xPos>
+                            <yPos>20</yPos>
+                            <radius>100</radius>
+                            <color>blue</color>
+                        </Shape>
+                        <Shape>
+                            <type>Circle</type>
+                            <xPos>10</xPos>
+                            <yPos>100</yPos>
+                            <radius>100</radius>
+                            <color>green</color>
+                        </Shape>
+                    </Shapes>
+                </CommandInstructions>
+            </Aware>
+        </task>
+        <task>
+            <Aware>
+                <ESM_Type>ESM_Freetext</ESM_Type>
+                <Title>Writing</Title>
+                <Instructions>Write a sentence</Instructions>
             </Aware>
         </task>
     </Component>
@@ -217,8 +275,14 @@
         </task>
     </Component>
     <Schedule>
-        <id>"morning"</id>
-        <hour>13</hour>
-        <minute>22</minute>
+        <id>morning</id>
+        <minute>30</minute>
+    </Schedule>
+    <Schedule>
+        <id>Registration</id>
+        <component>Registration</component>
+        <component>Recall</component>
+        <hour>15</hour>
+        <minute>40</minute>
     </Schedule>
 </TestDefinition>
