@@ -42,6 +42,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
     @Override
     protected void onResume() {
         super.onResume();
+        getFragmentManager().executePendingTransactions();
 
         status = (CheckBoxPreference) findPreference(STATUS_PLUGIN_TEMPLATE);
         testNames = (EditTextPreference) findPreference(TEST_NAMES);
@@ -61,7 +62,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
         if ( setting.getKey().equals(TEST_NAMES) ) {
             Log.v("Hello","The key is "+sharedPreferences.getString(key, null));
             Aware.setSetting(this, key, sharedPreferences.getString(key, null));
-            //testNames.setText(key);
+            testNames.setText(sharedPreferences.getString(key,null));
         }
         if (Aware.getSetting(this, STATUS_PLUGIN_TEMPLATE).equals("true")) {
             Aware.startPlugin(getApplicationContext(), "com.aware.plugin.cognitive_esm");

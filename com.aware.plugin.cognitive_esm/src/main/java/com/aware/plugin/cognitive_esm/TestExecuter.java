@@ -12,6 +12,7 @@ import com.aware.plugin.cognitive_esm.definition.SpecialInstructions;
 import com.aware.plugin.cognitive_esm.definition.TestDefinition;
 import com.aware.plugin.cognitive_esm.definition.Task;
 import com.aware.plugin.cognitive_esm.definition.Component;
+import com.aware.plugin.cognitive_esm.extraESM.OneStepCommand;
 import com.aware.plugin.cognitive_esm.extraESM.ThreeStepCommand;
 import com.aware.ui.esms.ESMFactory;
 import com.aware.ui.esms.ESM_Checkbox;
@@ -220,6 +221,8 @@ public class TestExecuter {
         switch (lc_command) {
             case "threestagecommand":
                 return new ThreeStepCommand().setESM_Class(ThreeStepCommand.class.toString());
+            case "onestagecommand":
+                return new OneStepCommand().setESM_Class(OneStepCommand.class.toString());
             default:
                 Log.e(LOG_TAG, "Invalid ESM: " + command);
                 return null;

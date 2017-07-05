@@ -257,6 +257,26 @@
         </task>
         <task>
             <Aware>
+                <ESM_Type>Command</ESM_Type>
+                <Command>OneStageCommand</Command>
+                <Title>Read and obey the following:</Title>
+                <text2speech>false</text2speech>
+                <CommandInstructions>
+                    <Text>Please move the circle to the right of the screen.</Text>
+                    <Shapes>
+                        <Shape>
+                            <type>Circle</type>
+                            <xPos>200</xPos>
+                            <yPos>100</yPos>
+                            <radius>100</radius>
+                            <color>red</color>
+                        </Shape>
+                    </Shapes>
+                </CommandInstructions>
+            </Aware>
+        </task>
+        <task>
+            <Aware>
                 <ESM_Type>ESM_Freetext</ESM_Type>
                 <Title>Writing</Title>
                 <Instructions>Write a sentence</Instructions>
@@ -276,7 +296,8 @@
     </Component>
     <Schedule>
         <id>morning</id>
-        <minute>30</minute>
+        <hour>10</hour>
+        <minute>05</minute>
     </Schedule>
     <Schedule>
         <id>Registration</id>
