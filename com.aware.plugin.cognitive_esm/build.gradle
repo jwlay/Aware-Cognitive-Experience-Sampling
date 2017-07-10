@@ -60,7 +60,7 @@ configurations.all {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:appcompat-v7:$support_libs"
     compile "com.github.jwlay:aware-client:$aware_libs"
     compile group: 'org.simpleframework', name: 'simple-xml', version: '2.7.1'

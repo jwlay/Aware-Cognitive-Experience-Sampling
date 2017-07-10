@@ -21,8 +21,6 @@ import java.util.ArrayList;
 
 public class ContextCard implements IContextCard {
 
-    private ListView tests;
-
     //Constructor used to instantiate this card
     public ContextCard() {}
 

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.util.Log;
 
-import com.aware.ESM;
 import com.aware.plugin.cognitive_esm.definition.Instructions;
 import com.aware.plugin.cognitive_esm.definition.Schedule;
 import com.aware.plugin.cognitive_esm.definition.Shape;
@@ -12,12 +11,13 @@ import com.aware.plugin.cognitive_esm.definition.SpecialInstructions;
 import com.aware.plugin.cognitive_esm.definition.TestDefinition;
 import com.aware.plugin.cognitive_esm.definition.Task;
 import com.aware.plugin.cognitive_esm.definition.Component;
+import com.aware.plugin.cognitive_esm.extraESM.MyESM;
 import com.aware.plugin.cognitive_esm.extraESM.OneStepCommand;
 import com.aware.plugin.cognitive_esm.extraESM.ThreeStepCommand;
 import com.aware.ui.esms.ESMFactory;
 import com.aware.ui.esms.ESM_Checkbox;
-import com.aware.ui.esms.ESM_IMAGE_Freetext;
 import com.aware.ui.esms.ESM_ImageManipulation;
+import com.aware.ui.esms.ESM_IMAGE_Freetext;
 import com.aware.ui.esms.ESM_Image_Draw;
 import com.aware.ui.esms.ESM_Question;
 import com.aware.ui.esms.ESM_QuickAnswer;
@@ -34,7 +34,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
-import java.net.MalformedURLException;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
@@ -53,19 +53,28 @@ public class TestExecuter {
         this.context = context;
         this.factory = factory;
         TestDefinition test = null;
-        if (File.startsWith("http://")) { //the file is a url'
+        if (File.startsWith("http://") || File.startsWith("https://")) { //the file is a url'
             try {
+                Log.v(LOG_TAG,"Trying to connect to url: "+File);
                 URL url = new URL(File);
-                InputStream is = url.openStream();
-                test = TestDeserializer.deserializeXml(getStringFromInputStream(is));
-
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("GET");
+                connection.connect();
+                if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                    Log.v(LOG_TAG,"connected to url");
+                    InputStream is = connection.getInputStream();
+                    test = TestDeserializer.deserializeXml(getStringFromInputStream(is));
+                    Log.v(LOG_TAG,"XML deserialized");
+                } else {
+                    Log.e(LOG_TAG,"Error connection to url: "+connection.getResponseCode()+ " " + connection.getResponseMessage());
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
-
         } else {
             try {
+                Log.v(LOG_TAG,"Looking for file in local folder");
                 InputStream is = context.getApplicationContext().getAssets().open(File);
                 test = TestDeserializer.deserializeXml(getStringFromInputStream(is));
             } catch (Exception e) {
@@ -76,36 +85,8 @@ public class TestExecuter {
             Log.v(LOG_TAG,"Starting test: "+test.getName());
             this.test = test;
             executeTest();
-        }
+        } else Log.i(LOG_TAG, "Test is null cannot start");
         return factory;
-    }
-
-    private static String getStringFromInputStream(InputStream is) {
-        BufferedReader br = null;
-        StringBuilder sb = new StringBuilder();
-
-        String line;
-        try {
-
-            br = new BufferedReader(new InputStreamReader(is));
-            while ((line = br.readLine()) != null) {
-                sb.append(line);
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-        return sb.toString();
-
     }
 
     public void executeTest() {
@@ -220,9 +201,9 @@ public class TestExecuter {
         String lc_command = command.toLowerCase();
         switch (lc_command) {
             case "threestagecommand":
-                return new ThreeStepCommand().setESM_Class(ThreeStepCommand.class.toString());
+                return new ThreeStepCommand().setESM_Class("com.aware.plugin.cognitive_esm.extraESM.ThreeStepCommand");
             case "onestagecommand":
-                return new OneStepCommand().setESM_Class(OneStepCommand.class.toString());
+                return new OneStepCommand().setESM_Class("com.aware.plugin.cognitive_esm.extraESM.OneStepCommand");
             default:
                 Log.e(LOG_TAG, "Invalid ESM: " + command);
                 return null;
@@ -252,17 +233,46 @@ public class TestExecuter {
                     s.addWeekday(weekday);
 
                 s.setActionType(Scheduler.ACTION_TYPE_BROADCAST);
-                s.setActionIntentAction(ESM.ACTION_AWARE_QUEUE_ESM);
+                s.setActionClass(Plugin.ACTION_AWARE_COGNITIVE_ESM);
+                s.setActionIntentAction(MyESM.ACTION_AWARE_QUEUE_ESM);
 
                 if (schedule.getComponents().size() == 0)
-                    s.addActionExtra(ESM.EXTRA_ESM, factory.build());
+                    s.addActionExtra(MyESM.EXTRA_ESM, factory.build());
                 else
-                    s.addActionExtra(ESM.EXTRA_ESM, buildTestComponents(schedule.getComponents()));
+                    s.addActionExtra(MyESM.EXTRA_ESM, buildTestComponents(schedule.getComponents()));
                 Scheduler.saveSchedule(context, s);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    private static String getStringFromInputStream(InputStream is) {
+        BufferedReader br = null;
+        StringBuilder sb = new StringBuilder();
+
+        String line;
+        try {
+
+            br = new BufferedReader(new InputStreamReader(is));
+            while ((line = br.readLine()) != null) {
+                sb.append(line);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return sb.toString();
+
     }
 
     private ESM_Question constructQuestion(String esm_type) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {

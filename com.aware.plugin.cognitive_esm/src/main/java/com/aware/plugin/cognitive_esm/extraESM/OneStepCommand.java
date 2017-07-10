@@ -2,9 +2,7 @@ package com.aware.plugin.cognitive_esm.extraESM;
 
 import android.graphics.Bitmap;
 
-import com.aware.ui.esms.ESM_ImageManipulation;
-
-import org.json.JSONException;
+import com.aware.ui.esms.ESM_ImageManipulation;import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
@@ -22,7 +20,7 @@ public class OneStepCommand extends ESM_ImageManipulation {
         JSONObject response = super.createJsonOutput(feedback);
         JSONObject answer = new JSONObject();
         boolean TestPass = true;
-        CanvasView.CircleArea circle = feedback.getmCircles().iterator().next();
+        ESM_ImageManipulation.CanvasView.CircleArea circle = feedback.getmCircles().iterator().next();
         Bitmap image = feedback.getDrawing();
 
         if (circle.centerX < (image.getWidth() * .5 )) {

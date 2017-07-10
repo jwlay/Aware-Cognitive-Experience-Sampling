@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:key="plugin_template"
+    android:key="com.aware.plugin.cognitive_esm"
     android:title="@string/app_name">
 
     <CheckBoxPreference
-        android:key="status_plugin_template"
+        android:key="status_plugin_cognitive_esm"
         android:defaultValue="false"
         android:persistent="true"
         android:summary="Activate/deactivate plugin" />
 
     <EditTextPreference
         android:key="test_names"
+        android:title="Test Names"
         android:persistent="true"
+        android:defaultValue="TEST"
         android:summary="Comma separated list of tests to run"
+        android:inputType="text"
         />
 
 </PreferenceScreen>

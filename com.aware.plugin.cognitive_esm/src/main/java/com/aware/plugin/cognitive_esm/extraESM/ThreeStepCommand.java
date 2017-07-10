@@ -1,8 +1,7 @@
 package com.aware.plugin.cognitive_esm.extraESM;
 
-import com.aware.ui.esms.ESM_ImageManipulation;
 
-import org.json.JSONException;
+import com.aware.ui.esms.ESM_ImageManipulation;import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Arrays;
