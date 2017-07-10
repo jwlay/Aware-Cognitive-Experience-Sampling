@@ -96,7 +96,7 @@ public class Plugin extends Aware_Plugin {
                     if (DEBUG) Log.v(TAG, "Creating test: "+test);
                     ExecuterParams params = new ExecuterParams(this, test);
                     TestExecuterTask task = new TestExecuterTask();
-                    task.execute(params);
+                    task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, params);
                 }
             else if (DEBUG) Log.i(TAG, "No tests found");
 
