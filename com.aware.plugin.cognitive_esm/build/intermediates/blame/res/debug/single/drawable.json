@@ -1,0 +1,322 @@
+[
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_timezone.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_timezone.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
+        "source": "/Users/Jan/.android/build-cache/f38465c2244865642f2bd0da3d1883d886e08880/output/res/drawable/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_gyroscope.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_gyroscope.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_esm.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_esm.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_rotation.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_rotation.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_network.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_network.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/Jan/.android/build-cache/f38465c2244865642f2bd0da3d1883d886e08880/output/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_bluetooth.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_bluetooth.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_launcher_settings.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_launcher_settings.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_telephony.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_telephony.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_communication.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_communication.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_locations.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_locations.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_processor.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_processor.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_plugin_settings.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_plugin_settings.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_wifi.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_wifi.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_battery.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_battery.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_aware_plugins.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_aware_plugins.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_magnetometer.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_magnetometer.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_add_plugin.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_add_plugin.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/grid_selector.xml",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/grid_selector.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_gravity.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_gravity.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_linear_acceleration.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_linear_acceleration.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_proximity.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_proximity.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_significant_motion.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_significant_motion.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/Users/Jan/.android/build-cache/f38465c2244865642f2bd0da3d1883d886e08880/output/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_mqtt.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_mqtt.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_applications.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_applications.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_webservice.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_webservice.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_aware_sensors.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_aware_sensors.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_launcher_aware.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_launcher_aware.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_qrcode.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_qrcode.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_barometer.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_barometer.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_temperature.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_temperature.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_accelerometer.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_accelerometer.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_nav_placeholder.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_nav_placeholder.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_aware_studies.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_aware_studies.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_light.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_light.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_aware_stream.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_aware_stream.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/square.xml",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/square.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/ic_action_screen.png",
+        "source": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/res/drawable/ic_action_screen.png"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/Jan/.android/build-cache/f38465c2244865642f2bd0da3d1883d886e08880/output/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/Jan/.android/build-cache/7004a15b3ccff67f206fbb5e3861fab63b32b1b7/output/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/Jan/.android/build-cache/f38465c2244865642f2bd0da3d1883d886e08880/output/res/drawable/design_snackbar_background.xml"
+    }
+]

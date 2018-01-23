@@ -56,6 +56,7 @@ public class Plugin extends Aware_Plugin {
         //Add permissions you need (Android M+).
         //By default, AWARE asks access to the #Manifest.permission.WRITE_EXTERNAL_STORAGE
         REQUIRED_PERMISSIONS.add(Manifest.permission.INTERNET);
+        REQUIRED_PERMISSIONS.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
@@ -100,11 +101,12 @@ public class Plugin extends Aware_Plugin {
                 }
             else if (DEBUG) Log.i(TAG, "No tests found");
 
-            esmSrv = new Intent(this, ESM.class);
+            esmSrv = new Intent(this, MyESM.class);
 
             //Initialise AWARE instance in plugin
             Aware.startAWARE(this);
             this.startService(esmSrv);
+            Log.d("Plugin", "esmSrv started");
         } else {
             if (DEBUG) Log.w(TAG, "Permission not ok!");
             Intent permissions = new Intent(this, PermissionsHandler.class);
@@ -149,5 +151,6 @@ public class Plugin extends Aware_Plugin {
         //Stop AWARE instance in plugin
         if (esmSrv != null) this.stopService(esmSrv);
         Aware.stopAWARE(this);
+        Log.d("Plugin", "Aware stopped");
     }
 }

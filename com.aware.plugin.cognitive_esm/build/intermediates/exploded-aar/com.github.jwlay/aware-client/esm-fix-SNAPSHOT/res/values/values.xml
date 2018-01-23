@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clean_old_data_readable">
+        <item>Never</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Daily</item>
+        <item>Always</item>
+    </string-array>
+    <string-array name="clean_old_data_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="frequency_readable">
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Fastest</item>
+    </string-array>
+    <string-array name="frequency_values">
+        <item>200000</item>
+        <item>60000</item>
+        <item>20000</item>
+        <item>0</item>
+    </string-array>
+    <item format="boolean" name="accessibility_access" type="bool">false</item>
+    <item format="boolean" name="standalone" type="bool">false</item>
+    <color name="accent">#03A9F4</color>
+    <color name="primary">#33B5E5</color>
+    <color name="primaryDark">#2196F3</color>
+    <string name="app_name">AWARE</string>
+    <string name="aware_activate_accessibility">Tap here to activate accessibility service.</string>
+    <string name="aware_activate_battery_optimize_ignore">Tap and add to the ignore battery optimizations\' list.</string>
+    <string name="aware_battery_recharge">Please, recharge your phone as soon as possible.</string>
+    <string name="aware_description">AWARE is an Android\'s framework dedicated to infer, log and share mobile context information between mobile applications. Visit http://awareframework.com for details.</string>
+    <string name="aware_esm_other">Other</string>
+    <string name="aware_esm_other_follow">Can you be more specific, please?</string>
+    <string name="aware_esm_questions">Tap to answer</string>
+    <string name="aware_esm_questions_title">Questionnaire waiting</string>
+    <string name="aware_plugins">AWARE Plugins</string>
+    <string name="aware_qrcode">QRCode</string>
+    <string name="aware_sensors">AWARE</string>
+    <string name="aware_stream">AWARE Stream</string>
+    <string name="aware_studies">AWARE Studies</string>
+    <string name="aware_study">Study</string>
+    <string name="aware_sync">Sync</string>
+    <string name="aware_team">Team</string>
+    <string name="install">Install</string>
+    <string name="plugins_required">Plugins needed (install to join)</string>
+    <string name="read_permission">Allow read-only access to the local data.</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="write_permission">Allow read and write access to the local data.</string>
+    <style name="Aware_Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Used to for the title of the Toolbar -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- Used to for the title of the Toolbar when parent is Theme.AppCompat.Light -->
+        <item name="android:textColorPrimaryInverse">@android:color/white</item>
+        <!-- Used to color the text of the action menu icons -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <!-- Used to color the overflow menu icon -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!-- Color of the Toolbar -->
+        <item name="android:background">@color/primary</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+    </style>
+    <style name="ListViewPreferences" parent="@android:style/Widget.ListView">
+        <item name="android:background">@android:color/background_light</item>
+    </style>
+    <style name="Theme.AppCompat.Translucent">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="Theme.Aware" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:listViewStyle">@style/ListViewPreferences</item>
+        <item name="android:windowBackground">@android:color/background_light</item>
+    </style>
+</resources>

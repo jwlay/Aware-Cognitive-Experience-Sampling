@@ -198,15 +198,15 @@ public class TestExecuter {
     }
 
     private ESM_Question specialQuestionConstructor(String command) throws JSONException {
-        String lc_command = command.toLowerCase();
+        String lc_command = command.toUpperCase();
         switch (lc_command) {
-            case "threestagecommand":
+            case "THREESTAGECOMMAND":
                 return new ThreeStepCommand().setESM_Class("com.aware.plugin.cognitive_esm.extraESM.ThreeStepCommand");
-            case "onestagecommand":
+            case "ONESTAGECOMMAND":
                 return new OneStepCommand().setESM_Class("com.aware.plugin.cognitive_esm.extraESM.OneStepCommand");
             default:
-                Log.e(LOG_TAG, "Invalid ESM: " + command);
-                return null;
+                Log.e(LOG_TAG, "Invalid ESM: " + lc_command);
+                return new ESM_Question();
         }
     }
 
