@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:2:1-48:12
+ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:4:5-45
 		INJECTED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml
@@ -16,7 +16,7 @@ ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/And
 		INJECTED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml
 		INJECTED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml
 application
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:6:5-47:19
+ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:6:5-34:19
 MERGED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:21:5-391:19
 MERGED from [com.android.support:cardview-v7:25.2.0] /Users/Jan/.android/build-cache/ed6c3aa781f973a45656f9d1ddd2ad1c82bafa96/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:gridlayout-v7:25.2.0] /Users/Jan/.android/build-cache/689951f55be26cc099ecbb6df22bf6f89d8bec99/output/AndroidManifest.xml:22:5-20
@@ -67,44 +67,12 @@ ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/And
 		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:24:13-67
 	android:writePermission
 		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:28:13-67
-receiver#com.aware.plugin.cognitive_esm.extraESM.MyESM$MyESMMonitor
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:30:9-41:20
+service#com.aware.plugin.cognitive_esm.extraESM.MyESM
+ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:30:9-32:39
 	android:exported
 		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:31:13-86
-intent-filter#ACTION_AWARE_ESM_ANSWERED+ACTION_AWARE_ESM_DISMISSED+ACTION_AWARE_ESM_EXPIRED+ACTION_AWARE_ESM_REPLACED+ACTION_AWARE_QUEUE_ESM+ACTION_AWARE_TRY_ESM
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:33:13-40:29
-action#ACTION_AWARE_TRY_ESM
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:34:17-63
-	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:34:25-60
-action#ACTION_AWARE_QUEUE_ESM
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:35:17-65
-	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:35:25-62
-action#ACTION_AWARE_ESM_ANSWERED
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:36:17-68
-	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:36:25-65
-action#ACTION_AWARE_ESM_DISMISSED
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:37:17-69
-	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:37:25-66
-action#ACTION_AWARE_ESM_EXPIRED
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:38:17-67
-	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:38:25-64
-action#ACTION_AWARE_ESM_REPLACED
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:39:17-68
-	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:39:25-65
-service#com.aware.plugin.cognitive_esm.extraESM.MyESM
-ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:43:9-45:39
-	android:exported
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:45:13-36
-	android:name
-		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:44:13-73
+		ADDED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml:31:13-73
 uses-sdk
 INJECTED from /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:7:5-9:41
@@ -470,6 +438,32 @@ ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads
 		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:189:13-36
 	android:name
 		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:188:13-52
+intent-filter#ACTION_AWARE_ESM_ANSWERED+ACTION_AWARE_ESM_DISMISSED+ACTION_AWARE_ESM_EXPIRED+ACTION_AWARE_ESM_REPLACED+ACTION_AWARE_QUEUE_ESM+ACTION_AWARE_TRY_ESM
+ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:190:13-197:29
+action#ACTION_AWARE_TRY_ESM
+ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:191:17-63
+	android:name
+		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:191:25-60
+action#ACTION_AWARE_QUEUE_ESM
+ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:192:17-65
+	android:name
+		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:192:25-62
+action#ACTION_AWARE_ESM_ANSWERED
+ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:193:17-68
+	android:name
+		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:193:25-65
+action#ACTION_AWARE_ESM_DISMISSED
+ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:194:17-69
+	android:name
+		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:194:25-66
+action#ACTION_AWARE_ESM_EXPIRED
+ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:195:17-67
+	android:name
+		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:195:25-64
+action#ACTION_AWARE_ESM_REPLACED
+ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:196:17-68
+	android:name
+		ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:196:25-65
 receiver#com.aware.Aware$AwareBoot
 ADDED from [com.github.jwlay:aware-client:esm-fix-SNAPSHOT] /Users/Jan/Downloads/MMSE/com.aware.plugin.cognitive_esm/build/intermediates/exploded-aar/com.github.jwlay/aware-client/esm-fix-SNAPSHOT/AndroidManifest.xml:199:9-205:20
 	android:exported

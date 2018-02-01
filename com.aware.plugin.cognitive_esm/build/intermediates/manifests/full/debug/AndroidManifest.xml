@@ -42,19 +42,6 @@
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
 
-        <receiver
-            android:name="com.aware.plugin.cognitive_esm.extraESM.MyESM$MyESMMonitor"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="ACTION_AWARE_TRY_ESM" />
-                <action android:name="ACTION_AWARE_QUEUE_ESM" />
-                <action android:name="ACTION_AWARE_ESM_ANSWERED" />
-                <action android:name="ACTION_AWARE_ESM_DISMISSED" />
-                <action android:name="ACTION_AWARE_ESM_EXPIRED" />
-                <action android:name="ACTION_AWARE_ESM_REPLACED" />
-            </intent-filter>
-        </receiver>
-
         <service
             android:name="com.aware.plugin.cognitive_esm.extraESM.MyESM"
             android:exported="true" />
