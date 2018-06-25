@@ -37,6 +37,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by Jan Wohlfahrt-Laymann on 2017-05-17.
@@ -141,8 +142,21 @@ public class TestExecuter {
                             tts = aware.getText2Speech();
                         if (tts != null)
                             question.setSpeakInstructions(tts); //enable text-2-speech
+                        if (aware.getSolution() != null) {
+                            question.setSolution(aware.getSolution());
+                        }
 
                         if (question instanceof ESM_Image_Draw || question instanceof ESM_IMAGE_Freetext) {
+                            if (!aware.getRandomImageInstructions().isEmpty()) {
+                                aware.setImageInstructions(
+                                        aware.getRandomImageInstructions().get(new Random().nextInt(
+                                                aware.getRandomImageInstructions().size()
+                                        ))
+                                );
+                            } else {
+                                Log.e(LOG_TAG,"aware Image instructions cannot be empty: "+aware.toString());
+                                return f;
+                            }
                             Instructions instructions = aware.getImageInstructions();
                             JSONObject json = new JSONObject();
                             instructions.setText(instructions.getText().replace("\n","").replace("\r",""));
@@ -173,9 +187,16 @@ public class TestExecuter {
 
                             json.put("Shapes",shapes);
                             question.setInstructions(json.toString());
+                        } else if (!aware.getRandomInstructions().isEmpty()){
+                            String instructions = aware.getRandomInstructions().get(
+                                    new Random().nextInt(
+                                            aware.getRandomInstructions().size()
+                                    )
+                            );
+                            aware.setInstructions(instructions.replace("\n","").replace("\r",""));
+                            question.setInstructions(instructions);
                         } else {
-                            aware.setInstructions(aware.getInstructions().replace("\n","").replace("\r",""));
-                            question.setInstructions(aware.getInstructions());
+                            Log.e(LOG_TAG, "Instructions cannot be empty: "+aware.toString());
                         }
 
                         if (question instanceof ESM_Checkbox) {

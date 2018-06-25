@@ -81,14 +81,14 @@
                                                             <xsd:documentation>Enable or disable text-to-speech for this task individually (optional)</xsd:documentation>
                                                         </xsd:annotation>
                                                     </xsd:element>
-                                                    <xsd:element name="Instructions" type="xsd:string" minOccurs="0">
+                                                    <xsd:element name="Instructions" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
                                                         <xsd:annotation>
-                                                            <xsd:documentation>Text instructions (optional)</xsd:documentation>
+                                                            <xsd:documentation>Text instructions (optional). In case multiple instructions are available the plugin will choose one at random.</xsd:documentation>
                                                         </xsd:annotation>
                                                     </xsd:element>
-                                                    <xsd:element name="ImageInstructions" type="xsd:element" minOccurs="0">
+                                                    <xsd:element name="ImageInstructions" type="xsd:element" minOccurs="0" maxOccurs="unbounded">
                                                         <xsd:annotation>
-                                                            <xsd:documentation>Element for the image instructions in case the ESM_IMAGE_Freetext or ESM_IMAGE_DRAW class is chosen (optional)</xsd:documentation>
+                                                            <xsd:documentation>Element for the image instructions in case the ESM_IMAGE_Freetext or ESM_IMAGE_DRAW class is chosen (optional). In case multiple instructions are available the plugin will choose one at random.</xsd:documentation>
                                                         </xsd:annotation>
                                                         <xsd:complexType>
                                                             <xsd:sequence>

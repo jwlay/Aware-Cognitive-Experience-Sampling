@@ -5,6 +5,7 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,11 +27,15 @@ public class Aware {
     @Element(name= "text2speech", required = false)
     private Boolean Text2Speech;
 
-    @Element(name = "Instructions", required = false)
     private String Instructions;
 
-    @Element(name = "ImageInstructions", required = false)
+    @ElementList(entry = "Instructions", required = false, inline = true)
+    private List<String> randomInstructions = new ArrayList<String>();
+
     private Instructions ImageInstructions;
+
+    @ElementList(entry = "ImageInstructions", required = false, inline = true)
+    private List<Instructions> RandomImageInstructions = new ArrayList<Instructions>();
 
     @Element(name = "CommandInstructions", required = false)
     private SpecialInstructions CommandInstructions;
@@ -81,12 +86,24 @@ public class Aware {
         Instructions = instructions;
     }
 
+    public List<String> getRandomInstructions() { return randomInstructions; }
+
+    public void setRandomInstructions(List<String> randomInstructions) { this.randomInstructions = randomInstructions; }
+
     public com.aware.plugin.cognitive_esm.definition.Instructions getImageInstructions() {
         return ImageInstructions;
     }
 
     public void setImageInstructions(com.aware.plugin.cognitive_esm.definition.Instructions imageInstructions) {
         ImageInstructions = imageInstructions;
+    }
+
+    public List<com.aware.plugin.cognitive_esm.definition.Instructions> getRandomImageInstructions() {
+        return RandomImageInstructions;
+    }
+
+    public void setRandomImageInstructions(List<com.aware.plugin.cognitive_esm.definition.Instructions> randomImageInstructions) {
+        RandomImageInstructions = randomImageInstructions;
     }
 
     public void setCommandInstructions(SpecialInstructions commandInstructions) {
