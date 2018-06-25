@@ -9,19 +9,28 @@ This plugin can perform Cognitive Tests resembling clinical pencil-and-paper tes
 
 ![developed ESMs](https://github.com/jwlay/Aware-Cognitive-Experience-Sampling/blob/master/Developed%20ESMS.jpeg?raw=true)
 
+# Publications
+
+For more information please see:
+
+Wohlfahrt-Laymann, Jan (2017) CogniDecline : tracking mobile interaction for cognitive assessment.
+http://purl.utwente.nl/essays/73360
+
+Wohlfahrt-Laymann, J., Hermens, H., Villalonga, C., Vollenbroek-Hutten, M., & Banos, O. (2018). Enabling remote assessment of cognitive behavior through mobile experience sampling. Paper presented at 2nd International Workshop on Emotion Awareness for Pervasive Computing with Mobile and Wearable Devices, EmotionAware 2018, Athens, Greece.
+https://research.utwente.nl/en/publications/enabling-remote-assessment-of-cognitive-behavior-through-mobile-e
+
+Wohlfahrt-Laymann, J., Hermens, H., Villalonga, C. et al. J Ambient Intell Human Comput (2018). https://doi.org/10.1007/s12652-018-0827-y
+
 # Settings
 Parameters adjustable on the dashboard and client:
 - **status_plugin_template**: (boolean) activate/deactivate plugin
 - **test_names**: Comma separated list of tests to run
 
 # Broadcasts
-**ACTION_AWARE_PLUGIN_TEMPLATE**
-Broadcast ..., with the following extras:
-- **value_1**: (double) amount of time turned off (milliseconds)
+No broadcasts
 
 # Providers
-##  Template Data
-> content://mmse.provider.xxx/plugin_template
+No context providers
 
 Field | Type | Description
 ----- | ---- | -----------
